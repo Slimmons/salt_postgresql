@@ -9,9 +9,8 @@ postgresql:
 python:
   postgres_user:
     - present
-    - user: root
+    - user: postgres
     - password: py
-    - runas: postgres
 
 weblogs:
   postgres_db:
