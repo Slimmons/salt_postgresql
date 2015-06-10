@@ -6,14 +6,16 @@ postgresql:
     - require:
       - pkg: postgresql
 
-db_username:
+dbusername:
   postgres_user:
     - present
     - password: pass
 
-db_name:
-  postgres_db:
+dbname:
+  postgres_database:
     - present
     - encoding: UTF-8
-    - owner: db_username
+    - owner: dbusername
     - name: db_name
+    - require:
+      - postgres_user: dbusername

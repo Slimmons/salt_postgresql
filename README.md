@@ -1,11 +1,9 @@
 # salt_postgresql
 
-
 ----------
-    State: - postgres_db
+    State: - postgres_database
     Name:      weblogs
     Function:  present
         Result:    False
-        Comment:   State postgres_db.present found in sls postgresql is unavailable
-
+        Comment:   Database weblogs has wrong parameters which couldn't be changed on fly.
         Changes:  
