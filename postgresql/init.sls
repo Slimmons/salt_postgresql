@@ -16,6 +16,6 @@ dbname:
     - present
     - encoding: UTF-8
     - owner: dbusername
-    - name: db_name
+    - name: dbname
     - require:
       - postgres_user: dbusername
