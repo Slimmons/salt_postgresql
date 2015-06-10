@@ -6,14 +6,14 @@ postgresql:
     - require:
       - pkg: postgresql
 
-python:
+db_username:
   postgres_user:
     - present
-    - user: postgres
-    - password: py
+    - password: pass
 
-weblogs:
+db_name:
   postgres_db:
     - present
-    - runas: postgres
-    - owner: python
+    - encoding: UTF-8
+    - owner: db_username
+    - name: db_name
